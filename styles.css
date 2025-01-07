@@ -54,3 +54,8 @@ img {
 p {
     color: white;
 }
+
+.item-price {
+    font-weight: bold;
+    color: #79cb15;
+}
