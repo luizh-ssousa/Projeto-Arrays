@@ -19,10 +19,8 @@ function showAll() {
 
 function mapAllItems() {
     const newPrices = menuOptions.map((product) => ({
-        name: product.name,
+        ...product,
         price: product.price * 0.9,
-        vegan: product.vegan,
-        src: product.src
     }))
 
     console.log(newPrices)
