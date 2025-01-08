@@ -17,8 +17,8 @@ function showAll() {
     list.innerHTML = myLi
 }
 
-function mapAllItems(){
-    console.log('chameeei')
+function mapAllItems() {
+    const newPrices = menuOptions.map( (product))
 }
 
 buttonShowAll.addEventListener('click', showAll)
