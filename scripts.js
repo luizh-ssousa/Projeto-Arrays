@@ -1,10 +1,10 @@
 const list = document.querySelector('ul')
 const buttonShowAll = document.querySelector('.show-all')
 const buttonMapAll = document.querySelector('.map-all')
-let myLi = ''
+
 
 function showAll(productsArray) {
-    myLi = ''
+    let myLi = ''
 
     productsArray.forEach((product) => {
         myLi += `
