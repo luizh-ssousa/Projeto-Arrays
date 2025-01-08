@@ -4,6 +4,8 @@ const buttonMapAll = document.querySelector('.map-all')
 let myLi = ''
 
 function showAll(productsArray) {
+    myLi = ''
+
     productsArray.forEach((product) => {
         myLi += `
             <li>
