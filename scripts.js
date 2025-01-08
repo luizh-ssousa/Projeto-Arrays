@@ -24,6 +24,8 @@ function mapAllItems() {
         vegan: product.vegan,
         src: product.src
     }))
+
+    console.log(newPrices)
 }
 
 buttonShowAll.addEventListener('click', showAll)
