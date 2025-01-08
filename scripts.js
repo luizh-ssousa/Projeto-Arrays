@@ -18,7 +18,12 @@ function showAll() {
 }
 
 function mapAllItems() {
-    const newPrices = menuOptions.map( (product))
+    const newPrices = menuOptions.map((product) => ({
+        name: product.name,
+        price: product.price * 0.9,
+        vegan: product.vegan,
+        src: product.src
+    }))
 }
 
 buttonShowAll.addEventListener('click', showAll)
