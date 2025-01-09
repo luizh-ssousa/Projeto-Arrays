@@ -4,6 +4,15 @@ const buttonMapAll = document.querySelector('.map-all')
 const sumAll = document.querySelector('.sum-all')
 const filterAll = document.querySelector('.filter-all')
 
+function formatCurrency(value) {
+    const newValue = value.toLocaleString('pt-br', {
+        style: 'currency',
+        currency: 'BRL',
+    })
+
+    return newValue
+}
+
 function showAll(productsArray) {
     let myLi = ''
 
@@ -12,7 +21,7 @@ function showAll(productsArray) {
             <li>
                 <img src=${product.src}>
                 <p>${product.name}</p>
-                <p class="item-price">R$ ${product.price}</p>
+                <p class="item-price"> ${formatCurrency(product.price)}</p>
             </li>
         `
     })
@@ -34,7 +43,7 @@ function sumAllItems() {
 
     list.innerHTML = `
             <li>
-                <p>O valor total dos itens é R$ ${totalValue}</p>
+                <p>O valor total dos itens é  ${formatCurrency(totalValue)}</p>
             </li>
         `
     console.log(totalValue)
